@@ -1,0 +1,16 @@
+{
+  "name": "rbot-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rbot-js.js",
+  "dependencies": {
+    "mqtt": "^2.18.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Greg Herlein <gherlein@herlein.com>",
+  "license": "MIT"
+}
