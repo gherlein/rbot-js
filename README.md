@@ -48,6 +48,9 @@ B_UP
 
 This test code is only using the left joystick and only the Y axis.
 
+You also need to be running pi-blaster-mqtt on a Raspberry Pi.
+
+
 ##
 
 Run this tool like this:
