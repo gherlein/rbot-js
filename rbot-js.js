@@ -33,10 +33,7 @@ joy.on('connect', function () {
 joy.on('message', function (topic, message) {
     var m = message.toString().split("|");
     if ( (m[0]=="L") && (m[1]=="Y"))  {
-	var y=parseFloat(m[3],10)/32768;
-	var o=0.05*y;
-	var n=0.15+o;
-	var p=n.toString();
+	var p = int16ToPWM(m[3]);
 	var m='4='+p;
 	rbot.publish(pitopic,m)
 	if (debug==1) {
@@ -47,3 +44,17 @@ joy.on('message', function (topic, message) {
 })
 
   
+function int16ToPWM(x) {
+    var v;
+    if (typeof x === 'string') {
+	v=parseFloat(x,10)
+    } else if(typeof x === 'number') {
+	v=val;
+    } else {
+	return NaN;
+    }
+    var y=v/32768;
+    var o=0.05*y;
+    var n=0.15+o;
+    return n.toString();
+} 
