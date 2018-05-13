@@ -61,6 +61,7 @@ Run this tool like this:
 
 ## Expected Behavior
 
+```
 node ./rbot-js.js 
 4=0.12265625
 4=0.09999999999999999
@@ -69,6 +70,7 @@ node ./rbot-js.js
 4=0.19999847412109376
 4=0.15
 ^C
+```
 
 You can end the program with a Ctrl-C
 
