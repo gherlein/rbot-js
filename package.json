@@ -4,7 +4,7 @@
   "description": "",
   "main": "rbot-js.js",
   "dependencies": {
-    "mqtt": "^2.18.0"
+    "mqtt": "^4.3.7"
   },
   "devDependencies": {},
   "scripts": {
